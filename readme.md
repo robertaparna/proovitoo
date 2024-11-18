@@ -27,3 +27,7 @@
 <p>POST endpoint-ile lisada valideerimine kasutaja küsimuse jaoks. Mõlema endpointi jaoks lisada informatiivsed veateated kui mingi päringu tegemisel või parsimisel midagi valesti läheb.</p>
 
 <h3>e. CI/CD pipeline</h3>
+<p>Kasutaksin selle keskkonana, kuhu kood on üles laetud, võimalusi(antud juhul Github Actions), et automaatselt jooksutada testid ning kontrollida koodi kvaliteeti. Seejärel kui need läbitakse edukalt, ehitada image, laadida see üles ja deployda.</p>
+
+<h3>f. Azure</h3>
+<p>Pilvekeskkonnas püstitamiseks ehitaksin ise Dockeri image-i, lükkaksin selle nt Docker Hub-i. Seejärel laeksin image-i pilvekeskkonda ja jooksutaksin selle seal.</p>
