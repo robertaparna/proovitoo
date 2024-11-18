@@ -1,0 +1,8 @@
+fastapi~=0.115.5
+openai~=1.40.0
+bs4~=0.0.2
+beautifulsoup4~=4.12.3
+requests-html~=0.10.0
+pydantic~=2.9.2
+uvicorn
+lxml_html_clean
