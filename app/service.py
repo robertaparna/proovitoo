@@ -12,11 +12,14 @@ class Service:
         return self.crawler.get_source_info()
 
     def get_system_message(self):
+
+        #annab juhised vastamiseks
         message = ("You are a helpful chatbot who will answer the user's "
                    "question based only on the data provided in this message. "
                    "You will also add the url's of the websites you got the information from as sources.")
         source_info = self.get_source_info()
 
+        #lisab lähteinfo, mille põhjal vastata
         for key, value in source_info.items():
             message += "The website with the url " + key + " contains the following text: " + value + " "
 

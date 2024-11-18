@@ -18,9 +18,10 @@ async def source_info():
 
 @app.post("/ask")
 async def ask(question: Question):
-
+    #sõnum mis annab robotile juhised vastamiseks
     system_message = service.get_system_message()
 
+    #päring robotile
     response = client.beta.chat.completions.parse(
        model='gpt-4o-mini',
        messages=[
@@ -36,6 +37,7 @@ async def ask(question: Question):
         response_format=Response,
     )
 
+    #vastuse soovitud formaadis ekstraktimine
     structured_response = response.choices[0].message.parsed
 
     return structured_response
